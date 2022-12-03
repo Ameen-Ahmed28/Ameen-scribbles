@@ -1,0 +1,17 @@
+# BMI 
+b=int(input('Enter your weight in kg:\n'))
+c=float(input('Enter your height in m:\n'))
+c=c*c
+bmi=b/c
+if bmi < 18.5:
+  print('"Underweight","Normal"')
+elif bmi>=18.5 and bmi < 25:
+  print('"Normal","Minimal"')
+elif bmi>=25 and bmi <30:
+  print('"Overweight","Increased"')
+elif bmi>=30 and bmi<35:
+  print('"Obese","High"')
+elif bmi>=35 and bmi <39.3:
+  print('"Severly Obese", "Very High"')
+else:
+  print ('"Morbidly Obese","extremly high"')
