@@ -1,0 +1,14 @@
+#TNEB
+"""
+a=units
+b=Fixed
+c=Subsidy
+tot=Total charge
+"""
+a=int(input('Enter the units consumed this month :\n'))
+if a<=100: b=a*1.5
+elif a<=200: b=a*1.5
+elif a<=500: b=(100*1.5)+((200-100)*2)+(a-200)*3
+elif a>500:  b=(100*1.5)+((200-100)*3.5)+((500-200)*4.6)+(a-500)*6.6
+c=150
+print('\nElectric bill:',b-c)
